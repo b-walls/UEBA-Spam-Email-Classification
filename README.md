@@ -1,4 +1,5 @@
 SpamDetection_BOW:
+
 This file contains a random forest and xgboost model that was trained on a dataset from kaggle. 
 Dataset can be found here: https://www.kaggle.com/code/mfaisalqureshi/email-spam-detection-98-accuracy/input
 
