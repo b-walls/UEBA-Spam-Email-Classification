@@ -1,16 +1,5 @@
-SpamDetection_BOW:
+Files:
 
-This file contains a random forest and xgboost model that was trained on a dataset from kaggle. 
-Dataset can be found here: https://www.kaggle.com/datasets/abdallahwagih/spam-emails/data
+data_preparation.ipynb -
 
-I implemented a NLP techniques to clean the emails and to help the model make significant predictions.
-
-At the bottom of the file there is a function call where you can input your own spam/not spam emails and the model
-will classify the email.
-
-SpamDetection:
-
-Machine Learning project for AI/ML internship.
-Data used is provided by UC Irvine. Dataset can be found here: https://archive.ics.uci.edu/dataset/94/spambase
-
-ML model uses data of thousands of emails labeled spam or not spam to classify and predict if an email is spam.
+  File used for data preparation for use in spam classificaiton models. This file contains a portion of feature engineering, and all of the text cleaning (removing special characters, removing stop-words, lemmitization). Due to the time complexity of the tasks and the amount of semi-raw data this file is separate from the rest of the project. This also allows for easier data management and storage, making it ready for the model when training and testing. 
