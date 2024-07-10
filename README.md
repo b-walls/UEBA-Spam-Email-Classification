@@ -1,5 +1,9 @@
 # Spam Classification Model
 
+## Data
+
+The `spam_data.zip` folder contains the original semi-raw data (`enron_spam_data.csv`) and the preprocessed data (`clean_enron_spam_data.pkl`) used to train the model. 
+
 ## Data Preparation
 
 ### `data_preparation.ipynb`
@@ -9,6 +13,7 @@ The `data_preparation.ipynb` notebook is dedicated to the preparation of data fo
 - **Feature Engineering**: Feature engineering process is documented within notebook.
 - **Text Cleaning**: Comprehensive text cleaning procedures, including removing special characters, stop-word removal, and lemmatization, are implemented.
 - **Sentiment Analysis**: Additionally, a pre-tuned sentiment analysis model was used to gain extra insights into the emails. This model is sourced from a [Hugging Face post](https://huggingface.co/cardiffnlp/twitter-roberta-base-sentiment-latest) and provides sentiment scores for the emails.
+- **TF-IDF**: Term Frequency - Inverse Document Frequency is used to tokenize the data for the models. This approach allows the most important words be analyzed by the model
 
 Given the computational complexity and the volume of semi-raw data, the data preparation tasks are separated from the model. This separation facilitates easier data management and storage, ensuring the data is ready for model training and testing.
 
