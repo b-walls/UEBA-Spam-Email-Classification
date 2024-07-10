@@ -8,7 +8,7 @@ The `spam_data.zip` folder contains the original semi-raw data (`enron_spam_data
 
 ### `data_preparation.ipynb`
 
-The `data_preparation.ipynb` notebook is dedicated to the preparation of data for training spam classification models. This notebook includes:
+The `data_preparation.ipynb` notebook is dedicated to the preparation of data for training a spam classification ML model. This notebook includes:
 
 - **Feature Engineering**: Feature engineering process is documented within notebook.
 - **Text Cleaning**: Comprehensive text cleaning procedures, including removing special characters, stop-word removal, and lemmatization, are implemented.
