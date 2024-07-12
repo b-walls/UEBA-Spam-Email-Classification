@@ -95,11 +95,11 @@ class EmailClassifierApp:
         df = self._load_features(subject=subject, body=body)
         
         # fixes the dataframe to match the model's input 
-        missing_cols = set(self.data.drop(columns={'Class', 'msg_freq_enron', 'msg_freq_louise', 'msg_freq_vince', 'msg_freq_2000', 'msg_freq_2001', 'msg_freq_713'}).columns) - set(df.columns)
+        missing_cols = set(self.data.drop(columns={'Class'}).columns) - set(df.columns)
         missing_cols = list(missing_cols)
         new_columns = pd.DataFrame(0, index=df.index, columns=missing_cols)
         df = pd.concat([df, new_columns], axis=1)
-        df = df[self.data.drop(columns={'Class', 'msg_freq_enron', 'msg_freq_louise', 'msg_freq_vince', 'msg_freq_2000', 'msg_freq_2001', 'msg_freq_713'}).columns]
+        df = df[self.data.drop(columns={'Class'}).columns]
         prediction = self.model.predict(df)
 
         if prediction == 0:
