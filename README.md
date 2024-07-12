@@ -14,6 +14,7 @@ The `data_preparation.ipynb` notebook is dedicated to the preparation of data fo
 - **Text Cleaning**: Comprehensive text cleaning procedures, including removing special characters, stop-word removal, and lemmatization, are implemented.
 - **Sentiment Analysis**: Additionally, a pre-tuned sentiment analysis model was used to gain extra insights into the emails. This model is sourced from a [Hugging Face post](https://huggingface.co/cardiffnlp/twitter-roberta-base-sentiment-latest) and provides sentiment scores for the emails.
 - **TF-IDF**: Term Frequency - Inverse Document Frequency is used to tokenize the data for the models. This approach allows the most important words be analyzed by the model
+- **Export Data**: Once all preprocessing is complete there is an export of the data file to be imported by the model training notebook.
 
 Given the computational complexity and the volume of semi-raw data, the data preparation tasks are separated from the model training and classification. This separation facilitates easier data management and storage, ensuring the data is ready for model training and testing when changes to the preprocessed data may be necessary.
 
@@ -28,6 +29,8 @@ The `model_training.ipynb` notebook is dedicated to the training of ML models to
 - **Export Model**: After training there is a method called `export_model` this is used to compress the model to a .pkl file and it's main use is to expand the capability of this project. The models can be imported into other python scripts.
 
 ## How to Use
+
+- **Important Note**: This project has models that are run on my CUDA capable computer. You must have a CUDA capable machine in order to run these files the way it was intended, if you do not have a CUDA capable computer there are places in the code that are documented where you can change the device the models are run on. 
 
 1. **Data Preparation**: Run the `data_preparation.ipynb` notebook to clean and prepare the dataset `enron_spam_data.csv`.
 2. **Model Training**: Run the `model_training.ipynb` to train models (XGBClassifier, Random Forest Classifier).
