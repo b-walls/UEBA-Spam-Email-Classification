@@ -24,7 +24,7 @@ Given the computational complexity and the volume of semi-raw data, the data pre
 The `model_training.ipynb` notebook is dedicated to the training of ML models to classify spam emails. This notebook includes:
 
 - **Random Forest Classifier**: The first model is a Random Forest Classifier. After investigation and hyper parameter tuning it appears that the default parameters work best for the dataset reaching a 0.979 accuracy score.
-- **XGBoost Classifier**: The second model is a XGBoost Classifier. After tuning the model to the data it reached an accuracy of 0.829, and better recall and precision scores than the Random Forest model.
+- **XGBoost Classifier**: The second model is a XGBoost Classifier. After tuning the model to the data it reached an accuracy of 0.982, and better recall and precision scores than the Random Forest model.
 - **Export Model**: After training there is a method called `export_model` this is used to compress the model to a .pkl file and it's main use is to expand the capability of this project. The models can be imported into other python scripts.
 
 ## How to Use
