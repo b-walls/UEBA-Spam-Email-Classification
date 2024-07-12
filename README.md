@@ -20,8 +20,8 @@ Given the computational complexity and the volume of semi-raw data, the data pre
 ## How to Use
 
 1. **Data Preparation**: Run the `data_preparation.ipynb` notebook to clean and prepare the dataset `enron_spam_data.csv`.
-2. **Model Training**: Run the `WIP` Used for the training of the model.
-3. **Model Classification**: Run the `WIP`.
+2. **Model Training**: Run the `model_training.ipynb` to train models (XGBClassifier, Random Forest Classifier).
+3. **Model Classification**: Run the `run_classification.py`, import the model and data, type in email to classify.
 
 ## Acknowledgements
 
