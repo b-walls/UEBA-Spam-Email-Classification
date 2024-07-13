@@ -38,7 +38,7 @@ The `run_classification.py` script is dedicated to running a UI window that allo
 - **Step 2**: Type in an email into the appropraite text fields (subject, body).
 - **Step 3**: Click the `Classify Email` button to make the model predict if the input email is either spam or not spam.
   
-  ![My Image](https://github.com/b-walls/UEBA-Spam-Email-Classification/blob/main/run_classification_UI.png)
+  ![My Image](https://github.com/b-walls/UEBA-Spam-Email-Classification/blob/main/UI_Example.png)
 
 ## How to Use
 
