@@ -37,6 +37,8 @@ The `run_classification.py` script is dedicated to running a UI window that allo
 - **Step 1**: Run the file and click `File` > `Import`. This will open the file explorer in the script's directory. First, select the compressed model's .pkl file, then select the compressed training data.
 - **Step 2**: Type in an email into the appropraite text fields (subject, body).
 - **Step 3**: Click the `Classify Email` button to make the model predict if the input email is either spam or not spam.
+  
+  ![My Image](https://github.com/b-walls/UEBA-Spam-Email-Classification/blob/main/run_classification_UI.png)
 
 ## How to Use
 
@@ -45,8 +47,6 @@ The `run_classification.py` script is dedicated to running a UI window that allo
 1. **Data Preparation**: Run the `data_preparation.ipynb` notebook to clean and prepare the dataset `enron_spam_data.csv`.
 2. **Model Training**: Run the `model_training.ipynb` to train models (XGBClassifier, Random Forest Classifier).
 3. **Model Classification**: Run the `run_classification.py`, see detailed steps in the `Model in Action` section above.
-
-![My Image](https://github.com/b-walls/UEBA-Spam-Email-Classification/blob/main/run_classification_UI.png)
 
 ## Acknowledgements
 
