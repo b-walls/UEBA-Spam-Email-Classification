@@ -34,7 +34,7 @@ The `model_training.ipynb` notebook is dedicated to the training of ML models to
 
 The `run_classification.py` script is dedicated to running a UI window that allows you to classify emails as either spam or not spam.
 
-- **Step 1**: Run the file and click `File` > `Import`. This will open the file explorer in the script's directory. First, select the compressed model's .pkl file, then select the compressed training data.
+- **Step 1**: Run the file and click `File` > `Import`. This will open the file explorer in the script's directory. Select the model's .pkl file.
 - **Step 2**: Type in an email into the appropraite text fields (subject, body).
 - **Step 3**: Click the `Classify Email` button to make the model predict if the input email is either spam or not spam.
   
