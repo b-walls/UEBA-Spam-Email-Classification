@@ -28,13 +28,23 @@ The `model_training.ipynb` notebook is dedicated to the training of ML models to
 - **XGBoost Classifier**: The second model is a XGBoost Classifier. After tuning the model to the data it reached an accuracy of 0.982, and better recall and precision scores than the Random Forest model.
 - **Export Model**: After training there is a method called `export_model(model, filename, directory)` this is used to compress the model to a .pkl file and it's main use is to expand the capability of this project. The models can be imported into other python scripts.
 
+## Model in Action
+
+### `run_classification`
+
+The `run_classification.py` script is dedicated to running a UI window that allows you to classify emails as either spam or not spam.
+
+- **Step 1**: Run the file and click `File` > `Import`. This will open the file explorer in the script's directory. First, select the compressed model's .pkl file, then select the compressed training data.
+- **Step 2**: Type in an email into the appropraite text fields (subject, body).
+- **Step 3**: Click the `Classify Email` button to make the model predict if the input email is either spam or not spam.
+
 ## How to Use
 
 - **Important Note**: This project has models that are run on my CUDA capable computer. You must have a CUDA capable machine in order to run these files the way it was intended, if you do not have a CUDA capable computer there are places in the code that are documented where you can change the device the models are run on. 
 
 1. **Data Preparation**: Run the `data_preparation.ipynb` notebook to clean and prepare the dataset `enron_spam_data.csv`.
 2. **Model Training**: Run the `model_training.ipynb` to train models (XGBClassifier, Random Forest Classifier).
-3. **Model Classification**: Run the `run_classification.py`, import the model and data, type in email to classify.
+3. **Model Classification**: Run the `run_classification.py`, see detailed steps in the `Model in Action` section above.
 
 ## Acknowledgements
 
