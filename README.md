@@ -46,6 +46,8 @@ The `run_classification.py` script is dedicated to running a UI window that allo
 2. **Model Training**: Run the `model_training.ipynb` to train models (XGBClassifier, Random Forest Classifier).
 3. **Model Classification**: Run the `run_classification.py`, see detailed steps in the `Model in Action` section above.
 
+![My Image](https://github.com/b-walls/UEBA-Spam-Email-Classification/blob/main/run_classification_UI.png)
+
 ## Acknowledgements
 
 - **Dataset**: The dataset used to train the spam classification models is derived from a GitHub repository, which compiled data from the study ["Spam Filtering with Naive Bayes - Which Naive Bayes?"](https://nes.aueb.gr/ipl/nlp/pubs/ceas2006_paper.pdf). You can access the dataset here: [Enron Spam Data](https://github.com/MWiechmann/enron_spam_data).
